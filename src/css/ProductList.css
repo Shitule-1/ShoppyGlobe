@@ -1,0 +1,55 @@
+/* ProductList.css */
+
+/* Container for the product list and search input */
+.productlistDiv {
+    max-width: 1200px; /* Limit the width */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Inner padding */
+    border: 1px solid #ccc; /* Border around the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Styling for the search input */
+.productlistDiv input {
+    padding: 10px; /* Inner padding */
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    width: 100%; /* Full width of the container */
+    margin-bottom: 15px; /* Space below the input */
+    box-sizing: border-box; /* Include padding and border in width */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+/* Focus state for the input */
+.productlistDiv input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+.product-item {
+    display: inline-block; /* This will allow items to be displayed in a row */
+     
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.product-box {
+    width: 250px; /* Set your desired width */
+    height: auto; /* Set your desired height */
+    border: 1px solid #ccc; /* Optional: adds a border around the box */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    box-shadow: 1ch 12px 5px rgba(99, 241, 127, 0.1); /* Optional: adds a shadow */
+    background-color: rgb(237, 247, 250); /* Optional: set background color */
+    transition: transform 0.2s; /* Optional: add a hover effect */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-box:hover {
+    background-color: lightgreen;
+    transform: scale(1.05); /* Optiosnal: scale effect on hover */
+}
